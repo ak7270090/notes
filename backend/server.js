@@ -47,9 +47,11 @@ app.get('/',(req,res)=>{
 //     res.send(note);
 // })
 
-
+app.use('/api/users',userRoutes);
+app.use('/api/notes',noteRoutes);
+// right below routes
 // --------------------------deployment------------------------------
-__dirname = path.resolve();
+ __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "development") {
   app.use(express.static(path.join(__dirname, "/frontend/build")));
@@ -65,8 +67,7 @@ if (process.env.NODE_ENV === "development") {
 // --------------------------deployment------------------------------
 
 
-app.use('/api/users',userRoutes);
-app.use('/api/notes',noteRoutes);
+
 app.use(notFound);
 app.use(errorHandler);
 
