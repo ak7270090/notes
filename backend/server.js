@@ -34,8 +34,8 @@ mongoose.connect(process.env.MONGO_URI
 
 
 
-app.get('/',(req,res)=>{
-    res.send('api is running')});
+//app.get('/',(req,res)=>{
+//    res.send('api is running')});
 
 // app.get('/api/notes',(req,res)=>{
 //     res.json(notes);
