@@ -19,7 +19,7 @@ const logoutHandler=()=>{
     <Navbar bg="primary" expand="lg" variant='dark'>
       <Container>
         <Navbar.Brand >
-          <Link to="/">Notes zipper</Link>
+          <Link to="/">Notes saver</Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

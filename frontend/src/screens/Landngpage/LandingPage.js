@@ -5,20 +5,20 @@ const LandingPage = () => {
     return (
 
 
-         // useEffect(()=>{
-    //   const userInfo=localStorage.getItem("userInfo");
-    //   if(userInfo){
-    //     //history.push("/mynotes");
-    //     navigate('/mynotes');
-    //   }
-    // },[navigate])
-    
+        // useEffect(()=>{
+        //   const userInfo=localStorage.getItem("userInfo");
+        //   if(userInfo){
+        //     //history.push("/mynotes");
+        //     navigate('/mynotes');
+        //   }
+        // },[navigate])
+
         <div className="main">
             <Container>
                 <Row>
                     <div className="intro-text">
                         <div>
-                            <h1 className="title">Welcome to Note Zipper</h1>
+                            <h1 className="title">Welcome to Notes Saver</h1>
                             <p className="subtitle">One Safe place for all your notes.</p>
                         </div>
                     </div>
@@ -31,15 +31,15 @@ const LandingPage = () => {
                         </a>
                         </div>
                         <div>
-                        <a href='/register'>
-                            <Button
-                                variant="outline-primary"
-                                size="lg"
-                                className="landingbutton"
-                            >
-                                Signup
-                            </Button>
-                        </a>
+                            <a href='/register'>
+                                <Button
+                                    variant="outline-primary"
+                                    size="lg"
+                                    className="landingbutton"
+                                >
+                                    Signup
+                                </Button>
+                            </a>
                         </div>
                     </div>
 
